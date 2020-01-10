@@ -1,6 +1,6 @@
 <html>
   <head>
-    <script src="https://aframe.io/releases/1.0.3/aframe.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/aframevr/aframe@e850be07c3a96fdfbafbd57c63cd2679fea0fcb1/dist/aframe-master.min.js"></script>
     <script src="https://unpkg.com/aframe-event-set-component@3.0.3/dist/aframe-event-set-component.min.js"></script>
   	<script src="./vr.js"></script>
   </head>
@@ -25,7 +25,7 @@
 		<a-image clickable mosca src="#moscaHercules" rotation="20 90 0" position="-4.5 6.5 0"></a-image>
 
 		<!-- Camera + Cursor. -->
-		<!-- <a-camera wasd-controls-enabled="false">
+		<a-camera wasd-controls-enabled="false">
 		  <a-cursor
 		    id="cursor"
 		    fuse="true"
@@ -41,10 +41,10 @@
 		    <a-animation begin="click" easing="ease-in" attribute="scale" dur="150" fill="forwards" from="0.1 0.1 0.1" to="1 1 1"></a-animation>
 		    <a-animation begin="cursor-fusing" easing="ease-in" attribute="scale" dur="1500" fill="backwards" from="1 1 1" to="0.1 0.1 0.1"></a-animation>
 		  </a-cursor>
-		</a-camera> -->
-		<a-camera>
+		</a-camera>
+<!-- 		<a-camera>
       		<a-cursor raycaster="far: 20; interval: 1000; showline: true;"></a-cursor>
-    	</a-camera>
+    	</a-camera> -->
 	</a-scene>
 
   </body>
